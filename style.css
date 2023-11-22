@@ -1,0 +1,85 @@
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #004d4d;
+    display: grid;
+    place-items: center;
+    margin-top: 15%;
+    height:50vh;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    background-color: #fff;
+    width: 95;
+    padding: 1rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.25);
+    display: grid;
+    gap: 1rem;
+}
+input {
+    width: 60%;
+    margin: 15px 18px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+label {
+    font-weight: 600;
+    padding: 0 15px;
+}
+form {
+    width: 100%;
+}
+button {
+    width: 43%;
+    border-radius: 5px;
+    background-color: #00a1a3;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px;
+}
+button[type="submit"] {
+    margin: 0 5px 0 15px;
+    background-color: #222121;
+}
+button:hover {
+    filter: brightness(120%);
+}
+.output {
+    text-align: center;
+}
+#bmi {
+    font-size: 4rem;
+}
+.bmi-scale {
+    display: flex;
+    justify-content: center;
+}
+.bmi-scale div {
+    text-align: center;
+    flex: 1;
+    border-top: 5px solid var(--color);
+    padding: 5px;
+}
+.bmi-scale h4{
+    font-size: 0.65rem;
+    margin: 10px;
+    text-transform: uppercase;
+    color: slategray;
+    font-weight: bolder;
+}
